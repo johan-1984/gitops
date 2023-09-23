@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp
+  name: copy-myapp
 spec:
   selector:
     matchLabels:
-      app: myapp
+      app: copy-myapp
   replicas: 4
   template:
     metadata:
       labels:
-        app: myapp
+        app: copy-myapp
     spec:
       containers:
-      - name: myapp
+      - name: copy-myapp
         image: nanajanashia/argocd-app:1.2
         ports:
         - containerPort: 8080

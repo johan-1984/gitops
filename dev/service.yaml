@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: myapp-service
+  name: copy-myapp-service
 spec:
   selector:
-    app: myapp
+    app: copy-myapp
   ports:
-  - port: 8080
+  - port: 8181
     protocol: TCP
     targetPort: 8080
   
