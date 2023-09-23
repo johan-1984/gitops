@@ -6,7 +6,7 @@ spec:
   selector:
     app: copy-myapp
   ports:
-  - port: 8181
+  - port: 8080
     protocol: TCP
     targetPort: 8080
   
