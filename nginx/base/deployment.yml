@@ -13,7 +13,7 @@ spec:
         app: nginx
     spec:
       containers:
-      - image: nginx
+      - image: docker pull nginxinc/nginx-unprivileged:stable-alpine
         name: nginx-container
         securityContext:
           runAsUser: 1000
